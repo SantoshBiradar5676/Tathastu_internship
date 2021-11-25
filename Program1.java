@@ -5,11 +5,11 @@ class Program1
 	public static void main(String args[])
 	{
 		Scanner input = new Scanner(System.in);
-		int num1,num2,op,result;
+		double num1,num2,op,result;
 		System.out.println("Please Enter 1st Number");
-		num1=input.nextInt();
+		num1=input.nextDouble();
 		System.out.println("Please Enter 2nd Number");
-		num2=input.nextInt();
+		num2=input.nextDouble();
 		
 			System.out.println("Enter 1 for Addition");
 			System.out.println("Enter 2 for Subtraction");
@@ -27,13 +27,10 @@ class Program1
 			result = num1 * num2;
 			System.out.println("Result :" + result);}
 			if(op==4){
-			double div;
-			div = num1 / num2;
-			System.out.println("Result :" + div);}
+			result = num1 / num2;
+			System.out.println("Result :" + result);}
 			else{
-			System.out.println("Enter Correct Choice");
+			System.out.println("\nEnter Correct Choice");
 			}
-			//System.out.println("Do you want To continue 0 to quite and 1 to continue");
-		//	while(cont==1);
-    
 	}
+    }
